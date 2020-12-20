@@ -92,9 +92,18 @@ video {
 body {
   background-color: white;
   color: #636363;
+  font-family: 'Proxima Nova Condensed', 'Proxima Nova', 'Helvetica Neue', Arial, Helvetica, sans-serif;
 }
 
 #root .layout__header {
+  height: 100px;
+  position: sticky;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  background-color: white;
+  border-bottom: 1px solid #d6d6d6;
+  z-index: 100;
   position: -webkit-sticky;
   /* Safari */
   position: sticky;
@@ -102,55 +111,61 @@ body {
   background-color: white;
 }
 
-@media (min-width: 768px) {
-  #root .layout__header {
-    height: 100px;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    background-color: white;
-    border-bottom: 1px solid #d6d6d6;
-    z-index: 100;
-  }
+#root .layout__header header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 768px) {
   #root .layout__header header {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    height: 100%;
-    max-width: 960px;
-    margin-left: auto;
-    margin-right: auto;
+    padding: 0 1.75rem;
   }
-  #root .layout__header header .logo a {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    min-height: 32px;
-    text-decoration: none;
-  }
-  #root .layout__header header .logo h1 {
-    display: inline-block;
-    height: 32px;
-    margin: 0 0 0 12px;
-    color: #000;
-    font-weight: 600;
-    font-size: 32px;
-    line-height: 32px;
-    vertical-align: middle;
-  }
-  #root .layout__header header .logo img {
-    height: 60px;
+}
+
+#root .layout__header header .logo a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 32px;
+  text-decoration: none;
+}
+
+#root .layout__header header .logo h1 {
+  display: inline-block;
+  height: 32px;
+  margin: 0 0 0 12px;
+  color: #000;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 32px;
+  vertical-align: middle;
+}
+
+#root .layout__header header .logo img {
+  height: 60px;
+}
+
+#root .layout__main-wrapper {
+  margin: 1rem 0;
+}
+
+@media (max-width: 768px) {
+  #root .layout__main-wrapper {
+    padding: 1.25rem 1.75rem;
   }
 }
 
@@ -206,20 +221,24 @@ body {
 }
 
 #root .layout__main-wrapper .main .text-content h1 {
-  font-size: 2.3rem;
+  font-size: 38px;
   color: #000910;
 }
 
 #root .layout__main-wrapper .main .text-content h2 {
-  font-size: 1.6rem;
+  font-size: 30px;
 }
 
 #root .layout__main-wrapper .main .text-content h3 {
-  font-size: 1.4rem;
+  font-size: 24px;
 }
 
 #root .layout__main-wrapper .main .text-content h4 {
-  font-size: 1.2rem;
+  font-size: 20px;
+}
+
+#root .layout__main-wrapper .main .text-content h5 {
+  font-size: 16px;
 }
 
 #root .layout__main-wrapper .main .text-content p {
@@ -279,6 +298,14 @@ body {
   padding: 1rem 0 3rem;
 }
 
+@media (max-width: 768px) {
+  #root .layout__footer .footer {
+    padding: 0 1.75rem;
+    border: none;
+    display: block;
+  }
+}
+
 #root .layout__footer .footer__main {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -323,6 +350,13 @@ body {
   -ms-flex-order: -1;
       order: -1;
   font-weight: 400;
+}
+
+@media (max-width: 768px) {
+  #root .layout__footer .footer__aside {
+    border-top: 2px solid #7f7f7f;
+    padding-top: 1rem;
+  }
 }
 
 #root .layout__footer .footer__social {
