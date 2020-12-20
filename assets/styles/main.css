@@ -1288,7 +1288,8 @@ label {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
   z-index: 1;
 }
 
@@ -1607,6 +1608,8 @@ label {
 # Features extended
 --------------------------------------------------------------*/
 .has-animations .features-extended {
+  max-width: 1440px;
+  margin: 0 auto;
   opacity: 0;
 }
 
@@ -1795,8 +1798,6 @@ label {
 }
 
 .boxed-container {
-  max-width: 1440px;
-  margin: 0 auto;
   -webkit-box-shadow: 0 20px 48px rgba(22, 30, 42, 0.16);
           box-shadow: 0 20px 48px rgba(22, 30, 42, 0.16);
 }
@@ -1825,6 +1826,8 @@ main {
 # Footer
 --------------------------------------------------------------*/
 .site-footer {
+  max-width: 1440px;
+  margin: 0 auto;
   position: relative;
   background: #0B0D19;
 }
