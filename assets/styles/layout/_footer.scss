@@ -91,7 +91,8 @@
   .site-footer {
     &::before {
       top: -152px;
-      left: calc(50% - 720px);
+      // left: calc(50% - 720px);
+      left: 0;
       height: 582px;
       background-size: 1440px 582px;
     }

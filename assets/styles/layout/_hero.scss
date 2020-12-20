@@ -63,18 +63,19 @@
 
     &::before,
     &::after {
-      left: calc(50% - 720px);
-      width: 1440px;
+      // left: calc(50% - 720px);
+      left: 0;
+      width: 100%;
     }
 
     &::before {
       height: 318px;
-      background-size: 1440px 318px;
+      background-size: cover;
     }
 
     &::after {
       height: 347px;
-      background-size: 1440px 347px;
+      background-size: cover;
     }
   }
 
