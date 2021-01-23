@@ -1,59 +1,62 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Cupizz | Gặp gỡ và Hẹn hò</title>
-    <link href="https://fonts.googleapis.com/css?family=Heebo:400,700|Oxygen:700" rel="stylesheet" />
-    <link rel="stylesheet" href="assets/styles/main.css" />
-    <script src="https://unpkg.com/scrollreveal@4.0.5/dist/scrollreveal.min.js"></script>
-  </head>
-  <body class="is-boxed has-animations">
-    <div class="body-wrap boxed-container">
-      <header class="site-header text-light">
-        <div class="container">
-          <div class="site-header-inner">
-            <div class="brand header-brand">
-              <h1 class="m-0">
-                <a href="#">
-                  <img class="header-logo-image" src="assets/image/logo.svg" alt="Logo" />
-                </a>
-              </h1>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta property="og:title" content="Cupizz | Giao lưu, kết bạn, hẹn hò và hơn thế nữa!">
+  <meta property="og:description" content="Các bằng hữu độc thân vui vẻ, xin có mấy lời gửi tới các bạn: Nếu bạn đang tìm kiếm người yêu, muốn bắt đầu hẹn hò, hay chỉ đơn giản là muốn có thêm bạn bè, bạn cần có mặt trên Cupizz.">
+  <meta property="og:image" content="assets/image/feature.png">
+  <title>Cupizz | Giao lưu, kết bạn, hẹn hò và hơn thế nữa!</title>
+  <link href="https://fonts.googleapis.com/css?family=Heebo:400,700|Oxygen:700" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/styles/main.css" />
+  <script src="https://unpkg.com/scrollreveal@4.0.5/dist/scrollreveal.min.js"></script>
+  <link rel="shortcut icon" href="assets/image/favicon.ico" type="image/x-icon">
+</head>
+
+<body class="is-boxed has-animations">
+  <div class="body-wrap boxed-container">
+    <header class="site-header text-light">
+      <div class="container">
+        <div class="site-header-inner">
+          <div class="brand header-brand">
+            <h1 class="m-0">
+              <a href="#">
+                <img class="header-logo-image" src="assets/image/logo.png" alt="Logo" />
+              </a>
+            </h1>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="hero text-center text-light">
+        <div class="hero-bg"></div>
+        <div class="hero-particles-container">
+          <canvas id="hero-particles"></canvas>
+        </div>
+        <div class="container-sm">
+          <div class="hero-inner">
+            <div class="hero-copy">
+              <h1 class="hero-title mt-0">Cupizz</h1>
+              <p class="hero-paragraph">Ứng dụng hẹn hò dành cho mọi người</p>
+              <div class="hero-cta">
+                <a class="button button-primary button-wide-mobile"
+                  href="https://play.google.com/store/apps/details?id=cf.cupizz.cupizz_app">Tải ứng dụng</a>
+              </div>
+            </div>
+            <div class="mockup-container">
+              <div class="mockup-bg">
+                <img src="assets/image/iphone-hero-bg.svg" alt="iPhone illustration" />
+              </div>
+              <img class="device-mockup" src="assets/image/iphone-mockup.png" alt="iPhone Hero" />
             </div>
           </div>
         </div>
-      </header>
-      <main>
-        <section class="hero text-center text-light">
-          <div class="hero-bg"></div>
-          <div class="hero-particles-container">
-            <canvas id="hero-particles"></canvas>
-          </div>
-          <div class="container-sm">
-            <div class="hero-inner">
-              <div class="hero-copy">
-                <h1 class="hero-title mt-0">Cupizz</h1>
-                <p class="hero-paragraph">Ứng dụng hẹn hò dành cho mọi người</p>
-                <div class="hero-cta">
-                  <a
-                    class="button button-primary button-wide-mobile"
-                    href="https://play.google.com/store/apps/details?id=cf.cupizz.cupizz_app"
-                    >Tải ứng dụng</a
-                  >
-                </div>
-              </div>
-              <div class="mockup-container">
-                <div class="mockup-bg">
-                  <img src="assets/image/iphone-hero-bg.svg" alt="iPhone illustration" />
-                </div>
-                <img class="device-mockup" src="assets/image/iphone-mockup.png" alt="iPhone Hero" />
-              </div>
-            </div>
-          </div>
-        </section>
+      </section>
 
-        <!-- <section class="features-extended section">
+      <!-- <section class="features-extended section">
           <div class="features-extended-inner section-inner">
             <div class="features-extended-wrap">
               <div class="container">
@@ -137,73 +140,69 @@
             </div>
           </div>
         </section> -->
-      </main>
+    </main>
 
-      <footer class="site-footer">
-        <div class="footer-particles-container">
-          <canvas id="footer-particles"></canvas>
-        </div>
-        <div class="site-footer-top">
-          <section class="cta section text-light">
-            <div class="container-sm">
-              <div class="cta-inner section-inner">
-                <div class="cta-header text-center">
-                  <h2 class="section-title mt-0">Trao lời yêu thương</h2>
-                  <p class="section-paragraph">
-                    Các bằng hữu độc thân vui vẻ, xin có mấy lời gửi tới các bạn: Nếu bạn đang tìm kiếm người
-                    yêu, muốn bắt đầu hẹn hò, hay chỉ đơn giản là muốn có thêm bạn bè, bạn cần có mặt trên
-                    Cupizz. Cupizz chính là nơi để gặp gỡ bạn tương hợp tốt nhất tiếp theo của bạn. Chân thành
-                    mà nói, môi trường hẹn hò ngày nay không còn giống như thời các cụ ngày xưa, giờ đây hầu
-                    hết mọi người đang gặp gỡ qua mạng xã hội. Với Cupizz, chúng tôi luôn sát cánh nhen nhóm
-                    những cơ hội gặp gỡ cho bạn.
-                  </p>
-                  <div class="cta-cta">
-                    <a
-                      class="button button-primary button-wide-mobile"
-                      href="https://play.google.com/store/apps/details?id=cf.cupizz.cupizz_app"
-                      >Kết nối ngay</a
-                    >
-                  </div>
+    <footer class="site-footer">
+      <div class="footer-particles-container">
+        <canvas id="footer-particles"></canvas>
+      </div>
+      <div class="site-footer-top">
+        <section class="cta section text-light">
+          <div class="container-sm">
+            <div class="cta-inner section-inner">
+              <div class="cta-header text-center">
+                <h2 class="section-title mt-0">Trao lời yêu thương</h2>
+                <p class="section-paragraph">
+                  Các bằng hữu độc thân vui vẻ, xin có mấy lời gửi tới các bạn: Nếu bạn đang tìm kiếm người
+                  yêu, muốn bắt đầu hẹn hò, hay chỉ đơn giản là muốn có thêm bạn bè, bạn cần có mặt trên
+                  Cupizz. Cupizz chính là nơi để gặp gỡ bạn tương hợp tốt nhất tiếp theo của bạn. Chân thành
+                  mà nói, môi trường hẹn hò ngày nay không còn giống như thời các cụ ngày xưa, giờ đây hầu
+                  hết mọi người đang gặp gỡ qua mạng xã hội. Với Cupizz, chúng tôi luôn sát cánh nhen nhóm
+                  những cơ hội gặp gỡ cho bạn.
+                </p>
+                <div class="cta-cta">
+                  <a class="button button-primary button-wide-mobile"
+                    href="https://play.google.com/store/apps/details?id=cf.cupizz.cupizz_app">Kết nối ngay</a>
                 </div>
               </div>
             </div>
-          </section>
-        </div>
-        <div class="site-footer-bottom">
-          <div class="container">
-            <div class="site-footer-inner">
-              <div class="brand footer-brand">
-                <a href="#">
-                  <img class="footer-logo-image" src="assets/image/logo.svg" alt="Cupizz logo" />
-                </a>
-              </div>
-              <ul class="footer-links list-reset">
-                <li>
-                  <a href="/privacy.html">Quyền riêng tư</a>
-                </li>
-                <li>
-                  <a href="/terms.html">Điều khoản</a>
-                </li>
-                <!-- <li>
+          </div>
+        </section>
+      </div>
+      <div class="site-footer-bottom">
+        <div class="container">
+          <div class="site-footer-inner">
+            <div class="brand footer-brand">
+              <a href="#">
+                <img class="footer-logo-image" src="assets/image/logo.svg" alt="Cupizz logo" />
+              </a>
+            </div>
+            <ul class="footer-links list-reset">
+              <li>
+                <a href="/privacy.html">Quyền riêng tư</a>
+              </li>
+              <li>
+                <a href="/terms.html">Điều khoản</a>
+              </li>
+              <!-- <li>
                   <a href="#">Thắc mắc</a>
                 </li> -->
-                <li>
-                  <a href="#">Hỗ trợ</a>
-                </li>
-              </ul>
-              <ul class="footer-social-links list-reset">
-                <li>
-                  <a href="#">
-                    <span class="screen-reader-text">Facebook</span>
-                    <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M6.023 16L6 9H3V6h3V4c0-2.7 1.672-4 4.08-4 1.153 0 2.144.086 2.433.124v2.821h-1.67c-1.31 0-1.563.623-1.563 1.536V6H13l-1 3H9.28v7H6.023z"
-                        fill="#FFF"
-                      />
-                    </svg>
-                  </a>
-                </li>
-                <!-- <li>
+              <li>
+                <a href="#">Hỗ trợ</a>
+              </li>
+            </ul>
+            <ul class="footer-social-links list-reset">
+              <li>
+                <a href="#">
+                  <span class="screen-reader-text">Facebook</span>
+                  <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M6.023 16L6 9H3V6h3V4c0-2.7 1.672-4 4.08-4 1.153 0 2.144.086 2.433.124v2.821h-1.67c-1.31 0-1.563.623-1.563 1.536V6H13l-1 3H9.28v7H6.023z"
+                      fill="#FFF" />
+                  </svg>
+                </a>
+              </li>
+              <!-- <li>
                   <a href="#">
                     <span class="screen-reader-text">Twitter</span>
                     <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
@@ -225,14 +224,15 @@
                     </svg>
                   </a>
                 </li> -->
-              </ul>
-              <div class="footer-copyright">&copy; 2021 Cupizz, Đã đăng ký Bản quyền</div>
-            </div>
+            </ul>
+            <div class="footer-copyright">&copy; 2021 Cupizz, Đã đăng ký Bản quyền</div>
           </div>
         </div>
-      </footer>
-    </div>
+      </div>
+    </footer>
+  </div>
 
-    <script src="assets/js/main.js"></script>
-  </body>
+  <script src="assets/js/main.js"></script>
+</body>
+
 </html>
